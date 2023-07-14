@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class NcrAndNpr {
 
-	
+
 	double fact(double n) {
 		int i = 1;
 		double fact = 1;
@@ -14,11 +14,13 @@ public class NcrAndNpr {
 	}
 
 	double permutation(int n, int r) {
+		// nPr = n!/(n-r)!
 		double per = fact(n) / fact(n - r);
 		return per;
 	}
 
 	double combination(int n, int r) {
+		// nCr = n!/(n!(n-r)!)
 		double com = fact(n) / (fact(n - r) * fact(r));
 		return com;
 	}
